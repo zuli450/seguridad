@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quejas</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="quejas.css">
+
+</head>
+<body>
+    <header>
+        <b href="#" class="logo">
+            <img src="logo 1.jpg" alt="logo uno">
+            <img src="logo2.png" alt="logo dos">
+            <img src="logo 3.png" alt="logo tres">
+            <h1 class="SEGURIDAD PUBLICA ISIDRO FABELA" style="font-size: 2.5em; font-weight: bold;">
+                SEGURIDAD PÚBLICA ISIDRO FABELA
+            </h1>
+        </b>
+    </header>
+    <hr class="separator">
+    <div class="documento">
+        <span><h2>Aviso de Privacidad</h2></span>
+        <a href="ruta/del/documento.pdf" class="boton" download>Descargar PDF</a>
+    </div>
+    <br>
+
+    <form action="quejas.php" method="POST" class="formulario">
+        <Center>
+        <h2 class= "quejas"  style="font-size: 2.2em; font-weight: bold;">
+            Quejas y Sugerencias
+        </h2>
+        <br>
+        <label style="font-family: Arial; font-size: 19px; font-weight: bold;">¿Qué desea presentar?</label><br>
+        <input type="radio" id="queja" name="tipo" value="queja" required>
+        <label for="queja" style="font-family: Arial; font-size: 19px;">Queja</label>
+        <input type="radio" id="sugerencia" name="tipo" value="sugerencia" required>
+        <label for="sugerencia" style="font-family: Arial; font-size: 19px">Sugerencia</label><br>
+        <br>
+        <label for="texto" style="font-family: Arial; font-size: 19px;">Describa su queja o sugerencia:</label><br>
+        <textarea id="texto" name="texto" rows="4" cols="50"></textarea><br>
+        </center>
+           
+        <div class="botones-container">
+            <button type="submit" class="boton btn-enviar">Enviar</button>
+            <a href="index.html" class="boton btn-volver">Volver</a>
+        </div>
+    </form>
+
+</body>
+</html>

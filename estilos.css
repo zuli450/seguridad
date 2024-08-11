@@ -1,0 +1,187 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    min-height: 50px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.separator {
+    border: none;
+    height: 5px;
+    background-color: #001f3f;
+    margin: -5px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a, .logo img {
+    text-decoration: none;
+    color: white;
+    height: 100px;
+    margin-right: 35px;
+}
+
+.logo-img {
+    height: 100px;
+    margin-right: 35px;
+    border-radius: 10px;
+    border: 5px solid white;
+}
+
+.title {
+    color: #001f3f;
+    align-items: center;
+}
+
+.wrapper {
+    margin: 150px auto;
+    width: 70%;
+    text-align: center;
+}
+
+.main-img {
+    max-width: 350px;
+    float: left;
+    border: 5px solid #001f3f;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.text-box {
+    color: black;
+}
+
+.text-box h3 {
+    font-size: 16px;
+    text-align: left;
+}
+
+.links {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.link-container a {
+    display: block;
+    margin: 10px auto;
+    width: 150px;
+    background-color: #001f3f;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.link-container a h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.link-container a:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para pantallas telefonos */
+@media (max-width: 600px) {
+    body {
+        margin: 15px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra el contenido del header */
+        text-align: center;
+    }
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Alinea las imágenes verticalmente en el centro */
+    }
+
+    .logo img {
+        height: 80px;
+        margin-bottom: 10px; /* Espacio entre las imágenes */
+    }
+
+    .header-title {
+        margin-top: 20px; /* Ajusta el margen superior según tus necesidades */
+        font-size: 2em; /* Ajusta el tamaño del texto si es necesario */
+        font-weight: bold;
+        text-align: center; /* Alinea el texto al centro */
+    }
+
+    .wrapper {
+        width: 90%;
+        margin: 100px auto;
+    }
+
+    .main-img {
+        max-width: 60%;
+        float: none;
+        margin: 0 auto 15px;
+    }
+
+    .text-box h3 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .link-container a {
+        width: 80%;
+    }
+}
+/* Estilos para pantallas medianas tabletas */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+    }
+
+    .wrapper {
+        width: 80%;
+        margin: 120px auto;
+    }
+
+    .main-img {
+        max-width: 50%;
+        float: left;
+    }
+
+    .text-box h3 {
+        font-size: 15px;
+    }
+
+    .link-container a {
+        width: 200px;
+    }
+}
+
+/* Estilos para pantallas grandes computadoras */
+@media (min-width: 1025px) {
+    .wrapper {
+        width: 70%;
+        margin: 150px auto;
+    }
+
+    .main-img {
+        max-width: 350px;
+    }
+
+    .text-box h3 {
+        font-size: 16px;
+    }
+
+    .link-container a {
+        width: 150px;
+    }
+}
